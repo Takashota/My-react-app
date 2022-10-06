@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+.HeaderSection{
+  height: 45px;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  margin: 10px 10px 10px 10px;
+}
+
+.ProfileBtn{
+  left: 10px;
+}
+
+.LinkAbout{
+  position: absolute;
+  right: 10%;
+}
+
+.LinkBicycle{
+  position: absolute;
+  right: 5%;
+}
+
+.CenterTopPicture{
+  margin: 10px 10px 10px 10px;
+  height: 600px;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.AboutArticle{
+  margin: 10px 10px 10px 10px;
+  height: 600px;
+  width: 100%;
+  max-width: 1500px;
+
+}
+
+.BicycleArticle{
+  margin: 10px 10px 10px 10px;
+  height: 600px;
+  width: 100%;
+  max-width: 1500px;
+
+}
+
+.CopyRight{
+  margin: 10px 10px 10px 10px;
+  height: 20px;
+  width: 100%;
+  max-width: 1500px;
+
+}
+
+
+
+
+
+
+
