@@ -1,8 +1,14 @@
-import logo from './logo.svg';
+
+import ReactDOM from 'react-dom';
 import './App.css';
 import Records from './records.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { render } from "react-dom";
 import { responsivePropType } from 'react-bootstrap/esm/createUtilityClasses';
+import ImageOfLaptop from './img/laptopPicture2.jpg';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
 
@@ -14,14 +20,25 @@ function App() {
             <button type="button" class="btn btn-dark">Profile</button>
           </div>
           <div className="LinkAbout">
-            <button type="button" class="btn btn-link">About</button>
+            <a href="#LinkAbout" class="link-primary">About</a>
           </div>
           <div className="LinkBicycle">
-            <button type="button" class="btn btn-link">Bicycle</button>
+            <a href="#LinkBicycle" class="link-primary">Bicycle</a>
           </div>
         </section>
 
-        
+        <nav class="TopPageNav">
+          <div class="TopPageNav1">
+            <FontAwesomeIcon icon={faCoffee} />
+          </div>
+          <div class="TopPageNav2">
+            TopPageNav2
+          </div>
+          <div class="TopPageNav3">
+            TopPageNav3 
+          </div>
+        </nav>
+
           { Records.map( record => {
               return(
                 <footer className="box">
@@ -33,13 +50,15 @@ function App() {
         
 
         <div className="CenterTopPicture">
-          <img src="./img/ImageOfLaptop.png" alt="CenterTopPicture"></img>
+          <img className="CenterTopPictureImg" src={ImageOfLaptop} alt="CenterTopPicture"></img>
         </div>
-        <div className="AboutArticle">
-         About
-        </div>
-        <div className="BicycleArticle">
-         Bicycle 
+        <div className="Articles">
+          <div className="AboutArticle">
+          <a id="LinkAbout">About</a>
+          </div>
+          <div className="BicycleArticle">
+          <a id="LinkBicycle">Bicycle</a> 
+          </div>
         </div>
         <div className="CopyRight">
          CopyRight 

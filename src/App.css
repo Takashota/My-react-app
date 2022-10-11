@@ -28,15 +28,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .HeaderSection{
   height: 45px;
   width: 100%;
@@ -45,8 +36,30 @@
   margin: 10px 10px 10px 10px;
 }
 
+.TopPageNav{
+  position: absolute;
+  left: 1%;
+  background-color: #CCCCCC;
+  min-height: 500px;
+  min-width: 200px;
+  opacity: 0.5;
+  margin-top: 80px;
+}
+
+.TopPageNav1{
+  margin: 5px 5px 5px 5px;
+}
+.TopPageNav2{
+  margin: 5px 5px 5px 5px;
+}
+
+.TopPageNav3{
+  margin: 5px 5px 5px 5px;
+}
+
 .ProfileBtn{
   left: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .LinkAbout{
@@ -66,20 +79,22 @@
   max-width: 1500px;
 }
 
-.AboutArticle{
-  margin: 10px 10px 10px 10px;
-  height: 600px;
-  width: 100%;
-  max-width: 1500px;
+.Articles{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.AboutArticle{
+  min-height: 500px;
+  height: 100%;
+  margin-bottom: 500px;
 }
 
 .BicycleArticle{
-  margin: 10px 10px 10px 10px;
-  height: 600px;
-  width: 100%;
-  max-width: 1500px;
-
+  margin-bottom: 500px;
+  min-height: 500px;
+  height: 100%;
 }
 
 .CopyRight{
@@ -87,10 +102,16 @@
   height: 20px;
   width: 100%;
   max-width: 1500px;
+  font-size: x-small;
 
 }
 
-
+.CenterTopPictureImg{
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 600px;
+}
 
 
 
